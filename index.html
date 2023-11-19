@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Comic Generator</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Dashtoon AI Comic Generator</h1>
+    </div>
+
+    <br><br>
+
+    <div class="comic-container" id="comic-container">
+        <!-- Comic panels -->
+        <div class="panel" id="panel1"></div>
+        <div class="panel" id="panel2"></div>
+        <div class="panel" id="panel3"></div>
+        <div class="panel" id="panel4"></div>
+        <div class="panel" id="panel5"></div>
+        <div class="panel" id="panel6"></div>
+        <div class="panel" id="panel7"></div>
+        <div class="panel" id="panel8"></div>
+        <div class="panel" id="panel9"></div>
+        <div class="panel" id="panel10"></div>
+    </div>
+    
+    <br>
+    
+    <div class="input-container">
+        <textarea id="panel1-input" placeholder="Panel 1"></textarea>
+        <textarea id="panel2-input" placeholder="Panel 2"></textarea>
+        <textarea id="panel3-input" placeholder="Panel 3"></textarea>
+        <textarea id="panel4-input" placeholder="Panel 4"></textarea>
+        <textarea id="panel5-input" placeholder="Panel 5"></textarea>
+        <textarea id="panel6-input" placeholder="Panel 6"></textarea>
+        <textarea id="panel7-input" placeholder="Panel 7"></textarea>
+        <textarea id="panel8-input" placeholder="Panel 8"></textarea>
+        <textarea id="panel9-input" placeholder="Panel 9"></textarea>
+        <textarea id="panel10-input" placeholder="Panel 10"></textarea>
+        <button onclick="generateComic()">Generate Comic</button>
+        <button onclick="downloadComic()">Download Comic (as .png file)</button>
+    </div>
+    
+    <br><br>
+    <h4> Note: The API may take a long time to load the AI generated images. Eve though in the assignment it was given that 30 seconds is typical time, and 10 minutes is maximunm time, it can easily take more than 10 minutes too.</h4>
+    <script src="app.js"></script>
+</body>
+</html>
